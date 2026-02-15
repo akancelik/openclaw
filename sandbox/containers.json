@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "containerName": "openclaw-sbx-agent-main-subagent-9da7abb1-e92-9a4f6cbe",
+      "sessionKey": "agent:main:subagent:9da7abb1-e92f-43d0-a522-3d5374e7a551",
+      "createdAtMs": 1771158439448,
+      "lastUsedAtMs": 1771158439448,
+      "image": "openclaw-sandbox:bookworm-slim",
+      "configHash": "659e23f7a98fb45fa582394cc3d694eaad851153"
+    },
+    {
+      "containerName": "openclaw-sbx-agent-main-telegram-group--10037-223ccaa2",
+      "sessionKey": "agent:main:telegram:group:-1003798098667",
+      "createdAtMs": 1771155597792,
+      "lastUsedAtMs": 1771159221508,
+      "image": "openclaw-sandbox:bookworm-slim",
+      "configHash": "659e23f7a98fb45fa582394cc3d694eaad851153"
+    },
+    {
+      "containerName": "openclaw-sbx-agent-main-telegram-group--10036-4ba4180c",
+      "sessionKey": "agent:main:telegram:group:-1003653815580",
+      "createdAtMs": 1771170079802,
+      "lastUsedAtMs": 1771178472131,
+      "image": "openclaw-sandbox:bookworm-slim",
+      "configHash": "659e23f7a98fb45fa582394cc3d694eaad851153"
+    }
+  ]
+}

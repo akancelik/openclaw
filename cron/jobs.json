@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "4894157c-b1b9-4ca5-86a1-d18045da79e9",
+      "agentId": "main",
+      "name": "Daily GitHub Backup",
+      "enabled": true,
+      "createdAtMs": 1771185913777,
+      "updatedAtMs": 1771185913777,
+      "schedule": {
+        "kind": "cron",
+        "expr": "35 6 * * *",
+        "tz": "Europe/Berlin"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Starte tägliches Backup um 06:35 Uhr"
+      },
+      "state": {
+        "nextRunAtMs": 1771220100000
+      }
+    }
+  ]
+}
