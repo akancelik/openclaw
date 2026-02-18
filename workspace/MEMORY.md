@@ -26,7 +26,7 @@
 | Wer | Was | Modell |
 |-----|-----|--------|
 | Neo (ich) | Assistant, Recherche, Memory | MiniMax M2.5 |
-| [Erweiterbar] | [z.B. Coding-Agent] | [Modell] |
+| foness | Wochenbericht Research (5 Projekte/Woche) | Perplexity Sonar Pro |
 
 ## Wichtige Entscheidungen
 1. **Perplexity statt Brave** – bessere Ergebnisse
@@ -43,3 +43,12 @@
 ## Aktive Projekte
 - Telegram-Gruppen-Setup optimieren
 - Heartbeat-Checks etablieren
+
+## OpenClaw Dashboard Fix (16.02.2026)
+- Problem: Dashboard-Dateien (Agents → Files) wurden nicht persistent gespeichert
+- Ursache: gateway.trustedProxies war auf ["127.0.0.1/32"] beschränkt
+- Verbindung: Browser → Cloudflare Tunnel → Hostinger-Proxy (:57040) → OpenClaw Gateway (:18789)
+- Der Hostinger-Proxy leitete X-Forwarded-For Headers weiter, Gateway erkannte externe IPs nicht als lokal
+- Fix: trustedProxies auf ["0.0.0.0/0", "::0/0"] erweitert (sicher weil Port an 127.0.0.1 gebunden)
+- Ergebnis: Dateien speichern, Agenten anlegen, Config-Änderungen funktionieren jetzt
+- Lock-Files durch alte Crash-Sessions (ungültiger Cron-Key) verursacht

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "profiles": {
+    "nexos:default": {
+      "provider": "nexos",
+      "type": "api_key",
+      "key": ""
+    },
+    "minimax-portal:default": {
+      "type": "oauth",
+      "provider": "minimax-portal",
+      "access": "sk-cp-14KVthoFOzOkmxH_ecpY5EvyxupUHHr2Ht07VpBQFw65iukOKoJWyZD8oGW846raUaGOyj5Hz0SBgz29fY6Y9LldZGVHPNhT2bW2wfLEZTSXS5jQBUOLZOQ",
+      "refresh": "z6-6iX-mjBuYP2nntZUVvSNs0xVsm784dhvcoMdw4WI=",
+      "expires": 1802634659536
+    }
+  },
+  "lastGood": {
+    "minimax-portal": "minimax-portal:default"
+  },
+  "usageStats": {
+    "minimax-portal:default": {
+      "lastUsed": 1771246330144,
+      "errorCount": 0,
+      "lastFailureAt": 1771246330138
+    }
+  }
+}

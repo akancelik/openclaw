@@ -1,0 +1,25 @@
+#!/bin/bash
+# SuperMemory CLI wrapper
+SCRIPT_DIR="/data/.openclaw/workspace/skills/supermemory/scripts"
+
+CMD="$1"
+shift
+
+case "$CMD" in
+  add)
+    exec bash "$SCRIPT_DIR/add-memory.sh" "$@"
+    ;;
+  search)
+    exec bash "$SCRIPT_DIR/search.sh" "$@"
+    ;;
+  chat)
+    exec bash "$SCRIPT_DIR/chat.sh" "$@"
+    ;;
+  *)
+    echo "Usage: supermemory <add|search|chat> [args...]"
+    echo "  add \"content\" [\"description\"]  - Store a memory"
+    echo "  search \"query\"                  - Search memories"
+    echo "  chat \"question\"                 - Chat with memory base"
+    exit 1
+    ;;
+esac

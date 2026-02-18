@@ -2,25 +2,64 @@
   "version": 1,
   "jobs": [
     {
-      "id": "4894157c-b1b9-4ca5-86a1-d18045da79e9",
+      "id": "ffcbc9a8-be62-4002-b652-5b730a787c14",
       "agentId": "main",
       "name": "Daily GitHub Backup",
       "enabled": true,
-      "createdAtMs": 1771185913777,
-      "updatedAtMs": 1771185913777,
+      "createdAtMs": 1771186056142,
+      "updatedAtMs": 1771306528244,
       "schedule": {
         "kind": "cron",
         "expr": "35 6 * * *",
         "tz": "Europe/Berlin"
       },
-      "sessionTarget": "main",
+      "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
-        "kind": "systemEvent",
-        "text": "Starte tägliches Backup um 06:35 Uhr"
+        "kind": "agentTurn",
+        "message": "Führe das Backup-Script aus: /data/.openclaw/workspace/scripts/backup-to-github.sh"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1771220100000
+        "nextRunAtMs": 1771392900000,
+        "lastRunAtMs": 1771306500004,
+        "lastStatus": "error",
+        "lastDurationMs": 28240,
+        "consecutiveErrors": 1,
+        "runningAtMs": 1771392900006
+      }
+    },
+    {
+      "id": "343f40e5-5daf-4aac-a9e0-ca96cc25f477",
+      "agentId": "foness",
+      "name": "foness-wochenbericht",
+      "enabled": true,
+      "createdAtMs": 1771274910865,
+      "updatedAtMs": 1771274910865,
+      "schedule": {
+        "kind": "cron",
+        "expr": "35 6 * * 1",
+        "tz": "Europe/Vienna"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Lies alle deine Workspace-Dateien (SOUL.md, USER.md, TOOLS.md, AGENTS.md, MEMORY.md) und führe den kompletten Wochenbericht-Workflow aus (AGENTS.md Schritt 1–6). Echtlauf — Google Sheets aktualisieren, Bericht per Telegram und E-Mail senden."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1771824900000,
+        "lastRunAtMs": 0,
+        "lastStatus": "ok",
+        "lastDurationMs": 0,
+        "consecutiveErrors": 0
       }
     }
   ]

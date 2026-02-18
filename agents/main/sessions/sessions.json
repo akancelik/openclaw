@@ -1,13 +1,30 @@
 {
   "agent:main:main": {
-    "sessionId": "boot-2026-02-15_17-44-43-814-401092de",
-    "updatedAt": 1771185889124,
+    "sessionId": "e5ee7e48-a5cf-4a0a-99bc-67f0c16487f9",
+    "updatedAt": 1771392932924,
     "systemSent": true,
+    "abortedLastRun": false,
+    "chatType": "direct",
+    "deliveryContext": {
+      "to": "7627639740"
+    },
+    "lastTo": "7627639740",
+    "origin": {
+      "label": "7627639740",
+      "provider": "heartbeat",
+      "from": "7627639740",
+      "to": "7627639740"
+    },
+    "sessionFile": "/data/.openclaw/agents/main/sessions/e5ee7e48-a5cf-4a0a-99bc-67f0c16487f9.jsonl",
+    "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/data/.openclaw/workspace/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supermemory</name>\n    <description>Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.</description>\n    <location>/data/.openclaw/workspace/skills/supermemory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>youtube-watcher</name>\n    <description>Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.</description>\n    <location>/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/data/.openclaw/workspace/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supermemory</name>\n    <description>Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.</description>\n    <location>/data/.openclaw/workspace/skills/supermemory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>youtube-watcher</name>\n    <description>Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.</description>\n    <location>/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "clawhub"
+        },
+        {
+          "name": "coding-agent"
         },
         {
           "name": "github"
@@ -43,6 +60,9 @@
           "name": "sonoscli"
         },
         {
+          "name": "summarize"
+        },
+        {
           "name": "video-frames"
         },
         {
@@ -50,6 +70,9 @@
         },
         {
           "name": "weather"
+        },
+        {
+          "name": "self-improvement"
         },
         {
           "name": "supermemory"
@@ -64,6 +87,14 @@
           "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
           "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
           "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/coding-agent",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
@@ -148,6 +179,14 @@
           "disableModelInvocation": false
         },
         {
+          "name": "summarize",
+          "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/summarize",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
           "name": "video-frames",
           "description": "Extract frames or short clips from videos using ffmpeg.",
           "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
@@ -172,6 +211,14 @@
           "disableModelInvocation": false
         },
         {
+          "name": "self-improvement",
+          "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+          "filePath": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
           "name": "supermemory",
           "description": "Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.",
           "filePath": "/data/.openclaw/workspace/skills/supermemory/SKILL.md",
@@ -188,39 +235,21 @@
           "disableModelInvocation": false
         }
       ],
-      "version": 1771155807363
+      "version": 0
     },
-    "deliveryContext": {
-      "channel": "webchat",
-      "to": "7627639740",
-      "accountId": "default"
-    },
-    "lastChannel": "webchat",
-    "lastTo": "7627639740",
-    "lastAccountId": "default",
-    "channel": "telegram",
+    "authProfileOverride": "minimax-portal:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "inputTokens": 24,
+    "outputTokens": 68,
+    "totalTokens": 13814,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
-    "abortedLastRun": false,
-    "inputTokens": 478009,
-    "outputTokens": 1035,
-    "totalTokens": 108651,
-    "chatType": "direct",
-    "origin": {
-      "label": "7627639740",
-      "provider": "webchat",
-      "from": "7627639740",
-      "to": "7627639740",
-      "surface": "webchat",
-      "chatType": "direct",
-      "accountId": "default"
-    },
-    "sessionFile": "/data/.openclaw/agents/main/sessions/boot-2026-02-15_07-26-28-421-75dff521.jsonl",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771185326354,
-      "sessionId": "boot-2026-02-15_17-44-43-814-401092de",
+      "generatedAt": 1771392928837,
+      "sessionId": "e5ee7e48-a5cf-4a0a-99bc-67f0c16487f9",
       "sessionKey": "agent:main:main",
       "provider": "minimax-portal",
       "model": "MiniMax-M2.5",
@@ -231,9 +260,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 23379,
-        "projectContextChars": 8031,
-        "nonProjectContextChars": 15348
+        "chars": 25277,
+        "projectContextChars": 8712,
+        "nonProjectContextChars": 16565
       },
       "injectedWorkspaceFiles": [
         {
@@ -296,17 +325,21 @@
           "name": "MEMORY.md",
           "path": "/data/.openclaw/workspace/MEMORY.md",
           "missing": false,
-          "rawChars": 1912,
-          "injectedChars": 1912,
+          "rawChars": 2593,
+          "injectedChars": 2593,
           "truncated": false
         }
       ],
       "skills": {
-        "promptChars": 4892,
+        "promptChars": 6123,
         "entries": [
           {
             "name": "clawhub",
             "blockChars": 429
+          },
+          {
+            "name": "coding-agent",
+            "blockChars": 276
           },
           {
             "name": "github",
@@ -349,6 +382,10 @@
             "blockChars": 211
           },
           {
+            "name": "summarize",
+            "blockChars": 293
+          },
+          {
             "name": "video-frames",
             "blockChars": 226
           },
@@ -359,6 +396,10 @@
           {
             "name": "weather",
             "blockChars": 217
+          },
+          {
+            "name": "self-improvement",
+            "blockChars": 653
           },
           {
             "name": "supermemory",
@@ -514,678 +555,9 @@
           }
         ]
       }
-    },
-    "lastHeartbeatText": "Erinnerung ✨ underwegs!\n\nAlles gut bei dir? 😄",
-    "lastHeartbeatSentAt": 1771141516515,
-    "authProfileOverride": "minimax-portal:default",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0
+    }
   },
   "agent:main:cron:f79f6415-1e82-4917-9805-92ebeba74cf4": {
-    "sessionId": "a6b035a0-a129-4ba6-9ef7-32a9694c6ef9",
-    "updatedAt": 1771141542345,
-    "systemSent": true,
-    "model": "MiniMax-M2.5",
-    "contextTokens": 200000,
-    "label": "Cron: Reminder 1 min",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "clawhub"
-        },
-        {
-          "name": "github"
-        },
-        {
-          "name": "gog"
-        },
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "nano-banana-pro",
-          "primaryEnv": "GEMINI_API_KEY"
-        },
-        {
-          "name": "nano-pdf"
-        },
-        {
-          "name": "openai-image-gen",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "openai-whisper"
-        },
-        {
-          "name": "openai-whisper-api",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "video-frames"
-        },
-        {
-          "name": "wacli"
-        },
-        {
-          "name": "weather"
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "clawhub",
-          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "github",
-          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/github",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "gog",
-          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/gog",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-banana-pro",
-          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-pdf",
-          "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-image-gen",
-          "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper",
-          "description": "Local speech-to-text with the Whisper CLI (no API key).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper-api",
-          "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "video-frames",
-          "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/video-frames",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "wacli",
-          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/wacli",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts (no API key required).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "modelProvider": "minimax-portal",
-    "inputTokens": 375,
-    "outputTokens": 203,
-    "totalTokens": 13532
-  },
-  "agent:main:cron:f79f6415-1e82-4917-9805-92ebeba74cf4:run:2dcc6631-76a4-4cec-abaa-569f2f04b712": {
-    "sessionId": "2dcc6631-76a4-4cec-abaa-569f2f04b712",
-    "updatedAt": 1771141362380,
-    "systemSent": true,
-    "model": "MiniMax-M2.5",
-    "contextTokens": 200000,
-    "label": "Cron: Reminder 1 min",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "clawhub"
-        },
-        {
-          "name": "github"
-        },
-        {
-          "name": "gog"
-        },
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "nano-banana-pro",
-          "primaryEnv": "GEMINI_API_KEY"
-        },
-        {
-          "name": "nano-pdf"
-        },
-        {
-          "name": "openai-image-gen",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "openai-whisper"
-        },
-        {
-          "name": "openai-whisper-api",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "video-frames"
-        },
-        {
-          "name": "wacli"
-        },
-        {
-          "name": "weather"
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "clawhub",
-          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "github",
-          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/github",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "gog",
-          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/gog",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-banana-pro",
-          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-pdf",
-          "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-image-gen",
-          "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper",
-          "description": "Local speech-to-text with the Whisper CLI (no API key).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper-api",
-          "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "video-frames",
-          "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/video-frames",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "wacli",
-          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/wacli",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts (no API key required).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "modelProvider": "minimax-portal",
-    "inputTokens": 311,
-    "outputTokens": 131,
-    "totalTokens": 13468
-  },
-  "agent:main:cron:f79f6415-1e82-4917-9805-92ebeba74cf4:run:16cd32e3-ba48-460a-89d8-e7fcfcfc13ae": {
-    "sessionId": "16cd32e3-ba48-460a-89d8-e7fcfcfc13ae",
-    "updatedAt": 1771141422323,
-    "systemSent": true,
-    "model": "MiniMax-M2.5",
-    "contextTokens": 200000,
-    "label": "Cron: Reminder 1 min",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "clawhub"
-        },
-        {
-          "name": "github"
-        },
-        {
-          "name": "gog"
-        },
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "nano-banana-pro",
-          "primaryEnv": "GEMINI_API_KEY"
-        },
-        {
-          "name": "nano-pdf"
-        },
-        {
-          "name": "openai-image-gen",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "openai-whisper"
-        },
-        {
-          "name": "openai-whisper-api",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "video-frames"
-        },
-        {
-          "name": "wacli"
-        },
-        {
-          "name": "weather"
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "clawhub",
-          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "github",
-          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/github",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "gog",
-          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/gog",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-banana-pro",
-          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-pdf",
-          "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-image-gen",
-          "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper",
-          "description": "Local speech-to-text with the Whisper CLI (no API key).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper-api",
-          "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "video-frames",
-          "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/video-frames",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "wacli",
-          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/wacli",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts (no API key required).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "modelProvider": "minimax-portal",
-    "inputTokens": 24,
-    "outputTokens": 122,
-    "totalTokens": 13320
-  },
-  "agent:main:cron:f79f6415-1e82-4917-9805-92ebeba74cf4:run:969408a8-79fc-4b9d-b08d-a456de290f9c": {
-    "sessionId": "969408a8-79fc-4b9d-b08d-a456de290f9c",
-    "updatedAt": 1771141482324,
-    "systemSent": true,
-    "model": "MiniMax-M2.5",
-    "contextTokens": 200000,
-    "label": "Cron: Reminder 1 min",
-    "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
-      "skills": [
-        {
-          "name": "clawhub"
-        },
-        {
-          "name": "github"
-        },
-        {
-          "name": "gog"
-        },
-        {
-          "name": "healthcheck"
-        },
-        {
-          "name": "nano-banana-pro",
-          "primaryEnv": "GEMINI_API_KEY"
-        },
-        {
-          "name": "nano-pdf"
-        },
-        {
-          "name": "openai-image-gen",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "openai-whisper"
-        },
-        {
-          "name": "openai-whisper-api",
-          "primaryEnv": "OPENAI_API_KEY"
-        },
-        {
-          "name": "skill-creator"
-        },
-        {
-          "name": "video-frames"
-        },
-        {
-          "name": "wacli"
-        },
-        {
-          "name": "weather"
-        }
-      ],
-      "resolvedSkills": [
-        {
-          "name": "clawhub",
-          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "github",
-          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/github",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "gog",
-          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/gog",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "healthcheck",
-          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/healthcheck",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-banana-pro",
-          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "nano-pdf",
-          "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-image-gen",
-          "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper",
-          "description": "Local speech-to-text with the Whisper CLI (no API key).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "openai-whisper-api",
-          "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "skill-creator",
-          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/skill-creator",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "video-frames",
-          "description": "Extract frames or short clips from videos using ffmpeg.",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/video-frames",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "wacli",
-          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/wacli",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
-          "name": "weather",
-          "description": "Get current weather and forecasts (no API key required).",
-          "filePath": "/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md",
-          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/weather",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        }
-      ],
-      "version": 0
-    },
-    "modelProvider": "minimax-portal",
-    "inputTokens": 308,
-    "outputTokens": 126,
-    "totalTokens": 13465
-  },
-  "agent:main:cron:f79f6415-1e82-4917-9805-92ebeba74cf4:run:a6b035a0-a129-4ba6-9ef7-32a9694c6ef9": {
     "sessionId": "a6b035a0-a129-4ba6-9ef7-32a9694c6ef9",
     "updatedAt": 1771141542345,
     "systemSent": true,
@@ -1818,7 +1190,7 @@
       "accountId": "default"
     },
     "sessionId": "bacb49a4-3a87-4cda-a33f-2b6910095cbf",
-    "updatedAt": 1771178574946,
+    "updatedAt": 1771190281845,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:-1003653815580",
@@ -2020,15 +1392,15 @@
     "authProfileOverride": "minimax-portal:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "inputTokens": 947727,
-    "outputTokens": 2498,
-    "totalTokens": 96363,
+    "inputTokens": 184160,
+    "outputTokens": 765,
+    "totalTokens": 99602,
     "modelProvider": "minimax-portal",
     "model": "MiniMax-M2.5",
     "contextTokens": 200000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1771178472196,
+      "generatedAt": 1771190245475,
       "sessionId": "bacb49a4-3a87-4cda-a33f-2b6910095cbf",
       "sessionKey": "agent:main:telegram:group:-1003653815580",
       "provider": "minimax-portal",
@@ -2251,6 +1623,694 @@
           }
         ]
       }
+    }
+  },
+  "agent:main:cron:ffcbc9a8-be62-4002-b652-5b730a787c14": {
+    "sessionId": "a66d83ba-3f2b-469f-a668-8ad40fabfcd7",
+    "updatedAt": 1771392900043,
+    "systemSent": true,
+    "model": "MiniMax-M2.5",
+    "contextTokens": 200000,
+    "label": "Cron: Daily GitHub Backup",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/data/.openclaw/workspace/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supermemory</name>\n    <description>Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.</description>\n    <location>/data/.openclaw/workspace/skills/supermemory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>youtube-watcher</name>\n    <description>Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.</description>\n    <location>/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "clawhub"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "nano-banana-pro",
+          "primaryEnv": "GEMINI_API_KEY"
+        },
+        {
+          "name": "nano-pdf"
+        },
+        {
+          "name": "openai-image-gen",
+          "primaryEnv": "OPENAI_API_KEY"
+        },
+        {
+          "name": "openai-whisper"
+        },
+        {
+          "name": "openai-whisper-api",
+          "primaryEnv": "OPENAI_API_KEY"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "sonoscli"
+        },
+        {
+          "name": "summarize"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "wacli"
+        },
+        {
+          "name": "weather"
+        },
+        {
+          "name": "self-improvement"
+        },
+        {
+          "name": "supermemory"
+        },
+        {
+          "name": "youtube-watcher"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "clawhub",
+          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "nano-banana-pro",
+          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "nano-pdf",
+          "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-image-gen",
+          "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-whisper",
+          "description": "Local speech-to-text with the Whisper CLI (no API key).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-whisper-api",
+          "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "sonoscli",
+          "description": "Control Sonos speakers (discover/status/play/volume/group).",
+          "filePath": "/data/.openclaw/workspace/skills/sonoscli/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/sonoscli",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "summarize",
+          "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/summarize",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "wacli",
+          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/wacli",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "self-improvement",
+          "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+          "filePath": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "supermemory",
+          "description": "Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.",
+          "filePath": "/data/.openclaw/workspace/skills/supermemory/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/supermemory",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "youtube-watcher",
+          "description": "Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.",
+          "filePath": "/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/youtube-watcher",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    }
+  },
+  "agent:main:cron:ffcbc9a8-be62-4002-b652-5b730a787c14:run:07a63972-3199-40c9-8921-bb151deaf8d2": {
+    "sessionId": "07a63972-3199-40c9-8921-bb151deaf8d2",
+    "updatedAt": 1771306500127,
+    "systemSent": true,
+    "model": "MiniMax-M2.5",
+    "contextTokens": 200000,
+    "label": "Cron: Daily GitHub Backup",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/data/.openclaw/workspace/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supermemory</name>\n    <description>Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.</description>\n    <location>/data/.openclaw/workspace/skills/supermemory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>youtube-watcher</name>\n    <description>Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.</description>\n    <location>/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "clawhub"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "nano-banana-pro",
+          "primaryEnv": "GEMINI_API_KEY"
+        },
+        {
+          "name": "nano-pdf"
+        },
+        {
+          "name": "openai-image-gen",
+          "primaryEnv": "OPENAI_API_KEY"
+        },
+        {
+          "name": "openai-whisper"
+        },
+        {
+          "name": "openai-whisper-api",
+          "primaryEnv": "OPENAI_API_KEY"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "sonoscli"
+        },
+        {
+          "name": "summarize"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "wacli"
+        },
+        {
+          "name": "weather"
+        },
+        {
+          "name": "self-improvement"
+        },
+        {
+          "name": "supermemory"
+        },
+        {
+          "name": "youtube-watcher"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "clawhub",
+          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "nano-banana-pro",
+          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "nano-pdf",
+          "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-image-gen",
+          "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-whisper",
+          "description": "Local speech-to-text with the Whisper CLI (no API key).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-whisper-api",
+          "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "sonoscli",
+          "description": "Control Sonos speakers (discover/status/play/volume/group).",
+          "filePath": "/data/.openclaw/workspace/skills/sonoscli/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/sonoscli",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "summarize",
+          "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/summarize",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "wacli",
+          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/wacli",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "self-improvement",
+          "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+          "filePath": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "supermemory",
+          "description": "Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.",
+          "filePath": "/data/.openclaw/workspace/skills/supermemory/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/supermemory",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "youtube-watcher",
+          "description": "Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.",
+          "filePath": "/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/youtube-watcher",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
+    },
+    "modelProvider": "minimax-portal",
+    "inputTokens": 1589,
+    "outputTokens": 379,
+    "totalTokens": 14641
+  },
+  "agent:main:cron:ffcbc9a8-be62-4002-b652-5b730a787c14:run:a66d83ba-3f2b-469f-a668-8ad40fabfcd7": {
+    "sessionId": "a66d83ba-3f2b-469f-a668-8ad40fabfcd7",
+    "updatedAt": 1771392900043,
+    "systemSent": true,
+    "model": "MiniMax-M2.5",
+    "contextTokens": 200000,
+    "label": "Cron: Daily GitHub Backup",
+    "skillsSnapshot": {
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>coding-agent</name>\n    <description>Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-image-gen</name>\n    <description>Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper</name>\n    <description>Local speech-to-text with the Whisper CLI (no API key).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openai-whisper-api</name>\n    <description>Transcribe audio via OpenAI Audio Transcriptions API (Whisper).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/data/.openclaw/workspace/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts (no API key required).</description>\n    <location>/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>self-improvement</name>\n    <description>Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude (&apos;No, that&apos;s wrong...&apos;, &apos;Actually...&apos;), (3) User requests a capability that doesn&apos;t exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.</description>\n    <location>/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>supermemory</name>\n    <description>Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.</description>\n    <location>/data/.openclaw/workspace/skills/supermemory/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>youtube-watcher</name>\n    <description>Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.</description>\n    <location>/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "skills": [
+        {
+          "name": "clawhub"
+        },
+        {
+          "name": "coding-agent"
+        },
+        {
+          "name": "github"
+        },
+        {
+          "name": "gog"
+        },
+        {
+          "name": "healthcheck"
+        },
+        {
+          "name": "nano-banana-pro",
+          "primaryEnv": "GEMINI_API_KEY"
+        },
+        {
+          "name": "nano-pdf"
+        },
+        {
+          "name": "openai-image-gen",
+          "primaryEnv": "OPENAI_API_KEY"
+        },
+        {
+          "name": "openai-whisper"
+        },
+        {
+          "name": "openai-whisper-api",
+          "primaryEnv": "OPENAI_API_KEY"
+        },
+        {
+          "name": "skill-creator"
+        },
+        {
+          "name": "sonoscli"
+        },
+        {
+          "name": "summarize"
+        },
+        {
+          "name": "video-frames"
+        },
+        {
+          "name": "wacli"
+        },
+        {
+          "name": "weather"
+        },
+        {
+          "name": "self-improvement"
+        },
+        {
+          "name": "supermemory"
+        },
+        {
+          "name": "youtube-watcher"
+        }
+      ],
+      "resolvedSkills": [
+        {
+          "name": "clawhub",
+          "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "coding-agent",
+          "description": "Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/coding-agent/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/coding-agent",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "github",
+          "description": "Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/github",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gog",
+          "description": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/gog/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/gog",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "healthcheck",
+          "description": "Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/healthcheck/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/healthcheck",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "nano-banana-pro",
+          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-banana-pro",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "nano-pdf",
+          "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/nano-pdf",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-image-gen",
+          "description": "Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-image-gen",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-whisper",
+          "description": "Local speech-to-text with the Whisper CLI (no API key).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "openai-whisper-api",
+          "description": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/openai-whisper-api",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "skill-creator",
+          "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/skill-creator/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/skill-creator",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "sonoscli",
+          "description": "Control Sonos speakers (discover/status/play/volume/group).",
+          "filePath": "/data/.openclaw/workspace/skills/sonoscli/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/sonoscli",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "summarize",
+          "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/summarize/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/summarize",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "video-frames",
+          "description": "Extract frames or short clips from videos using ffmpeg.",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/video-frames/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/video-frames",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "wacli",
+          "description": "Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/wacli/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/wacli",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "weather",
+          "description": "Get current weather and forecasts (no API key required).",
+          "filePath": "/usr/local/lib/node_modules/openclaw/skills/weather/SKILL.md",
+          "baseDir": "/usr/local/lib/node_modules/openclaw/skills/weather",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "self-improvement",
+          "description": "Captures learnings, errors, and corrections to enable continuous improvement. Use when: (1) A command or operation fails unexpectedly, (2) User corrects Claude ('No, that's wrong...', 'Actually...'), (3) User requests a capability that doesn't exist, (4) An external API or tool fails, (5) Claude realizes its knowledge is outdated or incorrect, (6) A better approach is discovered for a recurring task. Also review learnings before major tasks.",
+          "filePath": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/self-improving-agent-1-0-2",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "supermemory",
+          "description": "Store and retrieve memories using the SuperMemory API. Add content, search memories, and chat with your knowledge base.",
+          "filePath": "/data/.openclaw/workspace/skills/supermemory/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/supermemory",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "youtube-watcher",
+          "description": "Fetch and read transcripts from YouTube videos. Use when you need to summarize a video, answer questions about its content, or extract information from it.",
+          "filePath": "/data/.openclaw/workspace/skills/youtube-watcher/SKILL.md",
+          "baseDir": "/data/.openclaw/workspace/skills/youtube-watcher",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        }
+      ],
+      "version": 0
     }
   }
 }
