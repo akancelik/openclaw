@@ -7,7 +7,7 @@
       "name": "Daily GitHub Backup",
       "enabled": true,
       "createdAtMs": 1771186056142,
-      "updatedAtMs": 1771393092283,
+      "updatedAtMs": 1771479313420,
       "schedule": {
         "kind": "cron",
         "expr": "35 6 * * *",
@@ -24,12 +24,12 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1771479300000,
-        "lastRunAtMs": 1771392900008,
+        "nextRunAtMs": 1771565700000,
+        "lastRunAtMs": 1771479300008,
         "lastStatus": "error",
-        "lastDurationMs": 192275,
-        "consecutiveErrors": 2,
-        "runningAtMs": 1771479300006
+        "lastDurationMs": 13412,
+        "consecutiveErrors": 3,
+        "runningAtMs": 1771565700002
       }
     },
     {
