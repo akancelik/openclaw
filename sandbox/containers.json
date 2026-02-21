@@ -1,44 +1,12 @@
 {
   "entries": [
     {
-      "containerName": "openclaw-sbx-agent-main-telegram-group--10036-4ba4180c",
+      "containerName": "openclaw-sbx-agent-main-telegram-group--10036-e194679e",
       "sessionKey": "agent:main:telegram:group:-1003653815580",
-      "createdAtMs": 1771170079802,
-      "lastUsedAtMs": 1771190245395,
+      "createdAtMs": 1771626146854,
+      "lastUsedAtMs": 1771626146854,
       "image": "openclaw-sandbox:bookworm-slim",
-      "configHash": "659e23f7a98fb45fa582394cc3d694eaad851153"
-    },
-    {
-      "containerName": "openclaw-sbx-agent-foness-subagent-77b1b08f-c-c3192ee1",
-      "sessionKey": "agent:foness:subagent:77b1b08f-c6f6-487c-a9eb-aa229f87f931",
-      "createdAtMs": 1771212927888,
-      "lastUsedAtMs": 1771212927888,
-      "image": "openclaw-sandbox:bookworm-slim",
-      "configHash": "7690626237bf59a5d3765e3433fb3288c89c82b7"
-    },
-    {
-      "containerName": "openclaw-sbx-agent-foness-cron-f75b6616-298d--954e35cb",
-      "sessionKey": "agent:foness:cron:f75b6616-298d-4590-9aa8-fb21fbe07d08",
-      "createdAtMs": 1771212950970,
-      "lastUsedAtMs": 1771212950970,
-      "image": "openclaw-sandbox:bookworm-slim",
-      "configHash": "7690626237bf59a5d3765e3433fb3288c89c82b7"
-    },
-    {
-      "containerName": "openclaw-sbx-agent-foness-subagent-742004e7-f-a94795d0",
-      "sessionKey": "agent:foness:subagent:742004e7-f38f-4235-8344-313544c98e9f",
-      "createdAtMs": 1771230789461,
-      "lastUsedAtMs": 1771230858328,
-      "image": "openclaw-sandbox:bookworm-slim",
-      "configHash": "7690626237bf59a5d3765e3433fb3288c89c82b7"
-    },
-    {
-      "containerName": "openclaw-sbx-agent-foness-subagent-b0cf83f2-9-79afe480",
-      "sessionKey": "agent:foness:subagent:b0cf83f2-9556-4197-8b78-8182155f990c",
-      "createdAtMs": 1771246299744,
-      "lastUsedAtMs": 1771246299744,
-      "image": "openclaw-sandbox:bookworm-slim",
-      "configHash": "7690626237bf59a5d3765e3433fb3288c89c82b7"
+      "configHash": "a1b4c61f4cddf0b344de7ed14960cd6496ce57aae49bb4871f3c8544a93d9572"
     }
   ]
 }
